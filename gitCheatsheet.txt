@@ -1,0 +1,12 @@
+touch .gitignore
+git config --global user.name Kanak
+git config --global email kanak9jvm@gmail.com
+git init
+git add .
+git commit -m "Initial commit"
+git status # just to see if the working tree is clean or not
+ssh-keygen -t rsa -b 4096 -C "kanak9jvm@gmail.com"
+cat <path to id_rsa.pub> 
+Add the above key to github account
+git remote add origin <ssh url.git>
+git push origin master
